@@ -1,5 +1,7 @@
+// src/page.tsx
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 
 const HomePage = () => {
   const [inputText, setInputText] = useState("");
@@ -80,6 +82,16 @@ const HomePage = () => {
             <span className="font-mono bg-gray-100 px-1 rounded">#</span> and
             other symbols
           </p>
+          <div className="mt-6 flex justify-center items-center space-x-4">
+            <a href="https://ko-fi.com/G2G8188JJN" target="_blank">
+              <Image
+                src={"https://storage.ko-fi.com/cdn/kofi6.png?v=6"}
+                alt="Buy Me a Coffee at ko-fi.com"
+                width={144}
+                height={144}
+              />
+            </a>
+          </div>
         </header>
 
         <div className="grid md:grid-cols-2 gap-6 mb-8">
